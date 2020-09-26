@@ -2,10 +2,14 @@ import React, { useCallback } from "react";
 import { Fragment } from "react";
 
 const BelajaruseCallback = (props) => {
-  const [kelas, setKelas] = React.useState([]);
-  const jumlahKelas = useCallback(() => {
-    return ["X TKJ", "X RPL", "XI TKJ", "XI RPL"];
-  }, []);
+  const [kelas, setKelas] = React.useState([
+    "X TKJ",
+    "X RPL",
+    "XI TKJ",
+    "XI RPL",
+    props.kelas
+  ]);
+  const jumlahKelas = useCallback(() => {}, []);
 
   React.useEffect(() => {
     let data = jumlahKelas();
