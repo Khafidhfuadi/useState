@@ -6,7 +6,7 @@ export default function App() {
   // const [kelas, setKelas] = React.useState();
   return (
     <div>
-      <UseMemo />
+      <UseMemo wilayah="jabar" />
     </div>
   );
 }
